@@ -83,6 +83,8 @@ exports.importKeys = importKeys;
  * @param {*} encryptOptions - options to control how the output is generated
  */
 const _encryptRequest = async (plainMessage, keyIdForPublicKey, encryptOptions = {}) => {
+
+  keyIdForPublicKey = '6CB294F47467C995'
   const argOptions = encryptOptions || {
       homedir: null,
       armor: true,
