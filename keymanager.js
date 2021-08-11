@@ -61,6 +61,7 @@ const importKeys = async (keyContentToImport, importOptions = {}) => {
         }
 
         const keyId = (fingerprint != null && fingerprint != undefined) ? fingerprint : null;
+        console.log('got here', keyId)
         return resolve(keyId);
       }
 
