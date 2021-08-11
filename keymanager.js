@@ -99,6 +99,7 @@ const _encryptRequest = async (plainMessage, keyIdForPublicKey, encryptOptions =
     throw new Error(`Error: Key Not Found with Id`);
     return;
   }
+	console.log(keyIdForPublicKey)
 
   let optionArgs = [
     '--default-key', keyIdForPublicKey,
