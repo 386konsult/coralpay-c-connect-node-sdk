@@ -100,8 +100,8 @@ const _encryptRequest = async (plainMessage, keyIdForPublicKey, encryptOptions =
   }
 
   let optionArgs = [
-    '--default-key', '6CB294F47467C995',
-    '--recipient', '6CB294F47467C995',
+    '--default-key', keyIdForPublicKey,
+    '--recipient', keyIdForPublicKey,
     '--trust-model', 'always' // so we don't get "no assurance this key belongs to the given user"
   ];
 
