@@ -117,6 +117,7 @@ const _encryptRequest = async (plainMessage, keyIdForPublicKey, encryptOptions =
 
   // Add the default options
   optionArgs = optionArgs.concat(defaultArguments);
+	console.log('please see this',optionArgs)
 
   if((argOptions.debug != undefined) && argOptions.debug) {
     console.log(`\nCalling GPG with options: \n${JSON.stringify(optionArgs)}\n`);
